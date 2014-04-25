@@ -1,7 +1,14 @@
 # Description of Script and variables to solve final project (Getting and Cleaning Data course)
 
+### run_analysis.R does the following: 
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive activity names. 
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-### Assumptions: original unzipped data files should reside in the following path of working directory: ~/data/UCI HAR Dataset
+
+### Assumptions: original unzipped data files reside in the following path of working directory: ~/data/UCI HAR Dataset
 
 
 ### Initialize environment
@@ -38,7 +45,7 @@ colnames(xTrain)<-features$V2   # assigns feature names to the variables
 traindf<-data.frame(subjectTrain, trainLabels, xTrain, check.names=FALSE)  # complete train data frame
 
 
-### Merge test and train data frames to obtain an intermediate set called tidyDF that will be used to obtain the final tidy data set as required by the project instructions
+### Merge "test" and "train" data frames to obtain an intermediate set called tidyDF that will be used to obtain the final tidy data set as required by the project instructions
 
 tidyDF<-rbind(testdf, traindf)
 
@@ -68,7 +75,7 @@ tidyDF1<- tidyDF1[with(tidyDF1, order(activityID, subjectID)), ] # ascending ord
 
 colorder<-c("activityName", "activityID", "subjectID", varsOfInterest)
 
-tidyDF1<-tidyDF1[ ,colorder] # rearrange column order
+tidyDF1<-tidyDF1[ ,colorder]   # rearrange column order
 
 
 
