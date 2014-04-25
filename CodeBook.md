@@ -11,9 +11,6 @@
 ### Assumptions: original unzipped data files reside in the following path of working directory: ~/data/UCI HAR Dataset
 
 
-### Initialize environment
-
-rm(list=ls())
 
 ### Load required libraries
 
