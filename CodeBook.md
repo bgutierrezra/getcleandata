@@ -1,5 +1,4 @@
-
-# Script to solve project requirements in Getting and Cleaning Data course
+# Description of Script and variables to solve final project (Getting and Cleaning Data course)
 
 
 ### Assumptions: original unzipped data files should reside in the following path of working directory: ~/data/UCI HAR Dataset
