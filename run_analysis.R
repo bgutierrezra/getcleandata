@@ -3,9 +3,6 @@
 ##
 
 
-
-rm(list=ls())
-
 #Load required libraries
 
 library(memisc)
