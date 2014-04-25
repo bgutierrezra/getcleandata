@@ -9,7 +9,7 @@
 
 
 ### Assumptions: original unzipped data files reside in the following path of working directory: ~/data/UCI HAR Dataset
-
+###  The data for the project comes from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 
 ### Load required libraries
@@ -89,4 +89,4 @@ write.table(tidyDF1, file="./tidydata1.txt", sep='\t', row.names=F)
 
 write.table(tidyDF2, file="./tidydata2.txt", sep='\t', row.names=F) 
 
-## tidydata2.txt is the final output of the script
+### tidydata2.txt is the final output of the script
